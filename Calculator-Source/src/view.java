@@ -2,13 +2,12 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Image;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -31,8 +30,12 @@ public class view{
 		JFrame.setDefaultLookAndFeelDecorated(true);
 		
 		//Image Icon
-		Image icon = Toolkit.getDefaultToolkit().getImage("img/icon.png");  
-		layout.setIconImage(icon);
+//		Image icon = Toolkit.getDefaultToolkit().getImage("img/icon.png"); 
+		
+		ImageIcon icon = new ImageIcon("img/icon.png");
+		
+		layout.setIconImage(icon.getImage());
+//		layout.setIconImage(img);
 
 		//JPanel
 		JPanel panel= new JPanel();  
@@ -635,6 +638,8 @@ input = num;
 		layout.setLayout(border);
 		layout.setLocation(640, 250);
 		layout.setVisible(true);
+		layout.setResizable(false);
+
 	}
 	
 }
