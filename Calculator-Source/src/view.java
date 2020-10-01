@@ -2,23 +2,19 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-
-
-public class calc implements ActionListener{
-
-//	public static void main(String[] args) {
-		// JFrame layout
-		calc(){
-	
+public class view{
+	public void outputFinal() {
 		Color ac_color = new Color(172, 57, 57);
 		Color operators_color = new Color(102, 102, 102);
 		Color number_color = new Color(77, 77, 77);
@@ -213,6 +209,237 @@ public class calc implements ActionListener{
 
 		layout.setSize(420, 480);
 		
+//		public void TextFieldInput() {
+//			
+//		}
+		
+		zero_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+//				String s = inputField.getText();
+				
+				
+				
+				// translateToMorse tm = new translateToMorse();
+//				String englishText = s.toLowerCase();
+//				String output = new String(englishText);
+				//	System.out.println(englishString());
+//				output = "";
+//					for(int i=0; i<englishText.length(); i++) {	
+//						System.out.print(translateMorse(englishText.charAt(i)));
+//						System.out.print(" ");
+//						
+//						output = output + translateMorse(englishText.charAt(i)) + " ";
+//						
+//						
+//						
+//					}
+				String input = inputField.getText();
+				String num = "0";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		one_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "1";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		two_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "2";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		three_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "3";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+
+		four_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "4";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		five_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "5";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		six_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "6";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		seven_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "7";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		eight_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "8";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		nine_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "9";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		dot_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = ".";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		plus_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "+";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		sub_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "-";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		mul_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "x";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		div_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+				String input = inputField.getText();
+				String num = "/";
+				input += num;
+				
+				inputField.setText(input);
+			}
+			});
+		
+		ac_btn.addActionListener(new ActionListener() {
+			@Override
+		
+			public void actionPerformed(ActionEvent e) {
+					inputField.setText("");
+			}
+			});
+			
+		submit_btn.addActionListener(new ActionListener() {
+			@Override
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				
+				String input = inputField.getText();
+				int input2 = Integer.valueOf(input);
+//				System.out.println(input);
+
+				storage value = new storage();
+				value.store(input, "no");
+				
+				
+				
+				
+			}
+			
+			
+		});
+		
+		
 //		int x = 1;
 //		layout.getRootPane().setWindowDecorationStyle(x);
 		layout.setLayout(null);
@@ -220,7 +447,5 @@ public class calc implements ActionListener{
 		layout.setUndecorated(false);
 		layout.setVisible(true);
 	}
-
+	
 }
-
-
