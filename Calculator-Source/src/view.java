@@ -247,10 +247,18 @@ public class view{
 			@Override
 		
 			public void actionPerformed(ActionEvent e) {
+
+		
 				String input = inputField.getText();
-				String num = "1";
-				input += num;
+				int value;
+				int num = 1;
 				
+				input += String.valueOf(num);
+
+				value = Integer.valueOf(input);
+
+				System.out.println(value);
+
 				inputField.setText(input);
 			}
 			});
@@ -367,9 +375,12 @@ public class view{
 			public void actionPerformed(ActionEvent e) {
 				String input = inputField.getText();
 				String num = "+";
-				input += num;
+
+
+				input = num;
 				
 				inputField.setText(input);
+				
 			}
 			});
 		
@@ -428,8 +439,12 @@ public class view{
 				int input2 = Integer.valueOf(input);
 //				System.out.println(input);
 
-				storage value = new storage();
-				value.store(input, "no");
+
+
+//				storage value = new storage();
+//				value.store(input, "no");
+
+
 				
 				
 				

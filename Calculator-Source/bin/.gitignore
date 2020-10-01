@@ -1,15 +1,14 @@
+<<<<<<< Updated upstream
 /icon.png
+=======
+>>>>>>> Stashed changes
 /calc$1.class
-/calc$2.class
+/calc.class
+/icon.png
+/storage.class
 /test.class
-/c1.class
 /view.class
-/actions.class
-/main.class
 /view$1.class
-/view$2.class
-/view$3.class
-/view$4.class
 /view$10.class
 /view$11.class
 /view$12.class
@@ -18,10 +17,20 @@
 /view$15.class
 /view$16.class
 /view$17.class
+<<<<<<< Updated upstream
+=======
+/view$18.class
+/view$2.class
+/view$3.class
+/view$4.class
+>>>>>>> Stashed changes
 /view$5.class
 /view$6.class
 /view$7.class
 /view$8.class
 /view$9.class
+<<<<<<< Updated upstream
 /view$18.class
 /storage.class
+=======
+>>>>>>> Stashed changes
