@@ -560,6 +560,7 @@ input = num;
 					}
 								inputField.setText(String.valueOf(output));
 								num1.setText(String.valueOf(output));
+								num2.setText("");
 								break;
 								
 					case "-": ans = n1 - n2;
@@ -581,6 +582,7 @@ input = num;
 					}
 								inputField.setText(String.valueOf(output1));
 								num1.setText(String.valueOf(output1));
+								num2.setText("");
 					break;
 					
 					case "x": ans = n1 * n2;
@@ -602,6 +604,7 @@ input = num;
 					}
 								inputField.setText(String.valueOf(output2));
 								num1.setText(String.valueOf(output2));
+								num2.setText("");
 					break;
 					
 					case "/": ans = n1 / n2;
@@ -623,6 +626,7 @@ input = num;
 					}
 								inputField.setText(String.valueOf(output3));
 								num1.setText(String.valueOf(output3));
+								num2.setText("");
 					break;
 					
 					default: System.out.println("Invalid");
