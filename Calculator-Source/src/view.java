@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> laptop
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -247,11 +251,26 @@ public class view{
 			@Override
 		
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
 				String input = inputField.getText();
 				String num = "1";
 				input += num;
 				
 				inputField.setText(input);
+=======
+				
+				String input = inputField.getText();
+				int value;
+				int num = 1;
+				
+				input += String.valueOf(num);
+
+				value = Integer.valueOf(input);
+
+				System.out.println(value);
+				inputField.setText(input);
+				
+>>>>>>> laptop
 			}
 			});
 		
@@ -367,9 +386,17 @@ public class view{
 			public void actionPerformed(ActionEvent e) {
 				String input = inputField.getText();
 				String num = "+";
+<<<<<<< HEAD
 				input += num;
 				
 				inputField.setText(input);
+=======
+				input = num;
+				
+				inputField.setText(input);
+				
+				
+>>>>>>> laptop
 			}
 			});
 		
@@ -428,8 +455,13 @@ public class view{
 				int input2 = Integer.valueOf(input);
 //				System.out.println(input);
 
+<<<<<<< HEAD
 				storage value = new storage();
 				value.store(input, "no");
+=======
+//				storage value = new storage();
+//				value.store(input, "no");
+>>>>>>> laptop
 				
 				
 				
