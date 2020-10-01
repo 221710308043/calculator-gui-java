@@ -247,7 +247,10 @@ public class view{
 			@Override
 		
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 		
 				String input = inputField.getText();
 				int value;
@@ -376,7 +379,10 @@ public class view{
 				String input = inputField.getText();
 				String num = "+";
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 				input = num;
 				
 				inputField.setText(input);
@@ -440,11 +446,17 @@ public class view{
 //				System.out.println(input);
 
 
+<<<<<<< Updated upstream
 
 //				storage value = new storage();
 //				value.store(input, "no");
 
 
+=======
+//				storage value = new storage();
+//				value.store(input, "no");
+
+>>>>>>> Stashed changes
 				
 				
 				
